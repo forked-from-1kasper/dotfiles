@@ -1,4 +1,4 @@
-﻿<Multi_key> <minus> <period>      : "‐" # HYPHEN
+<Multi_key> <minus> <period>      : "‐" # HYPHEN
 <Multi_key> <minus> <Cyrillic_yu> : "‐" # HYPHEN
 
 <Multi_key> <space> <t>             : " "
