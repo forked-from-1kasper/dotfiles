@@ -69,7 +69,7 @@ mymainmenu = awful.menu {
         { "Move",    wm.move },
         { "Delete",  wm.delete },
         { "Hide",    wm.hide },
-        { "Exit",    awesome.quit }
+        { "Exit",    function() awesome.quit() end }
     }
 }
 
