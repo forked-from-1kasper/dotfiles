@@ -539,6 +539,19 @@ client.connect_signal("manage", function (c)
     end
 end)
 
+-- https://github.com/basaran/awesomewm-backham/blob/master/init.lua
+function backham()
+    local s = awful.screen.focused()
+    local c = awful.client.focus.history.get(s, 0)
+    if c then
+        client.focus = c
+        c:raise()
+    end
+end
+
+client.connect_signal("property::minimized", backham)
+client.connect_signal("unmanage", backham)
+
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 
