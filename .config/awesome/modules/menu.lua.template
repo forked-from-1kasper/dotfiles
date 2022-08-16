@@ -1,0 +1,21 @@
+local gears = require("gears")
+local awful = require("awful")
+
+local Menu = { mt = {} }
+
+local function new(params)
+    return {
+        { "Terminal", params.terminal },
+        { "Hotkeys", function() hotkeys_popup.show_help(nil, awful.screen.focused()) end },
+        { "Network", {
+            { "Firefox", "firefox" },
+            { "Google Chrome", "google-chrome" }
+        } }
+    }
+end
+
+function Menu.mt:__call(...)
+    return new(...)
+end
+
+return setmetatable(Menu, Menu.mt)
