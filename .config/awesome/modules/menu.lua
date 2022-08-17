@@ -29,6 +29,7 @@ local function new(params)
             { "htop", params.terminal .. " -e htop" },
             { "Network Manager", params.terminal .. " -e nmtui" },
             { "9vx", "/home/kraken/HDD/9front/plan9.sh" },
+            { "drawterm", "/home/kraken/.local/bin/drawterm -u glenda -a localhost -h localhost" },
             { "Explorer", "wine explorer.exe" }
         } },
         { "Gaems", {
