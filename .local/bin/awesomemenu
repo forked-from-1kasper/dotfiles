@@ -1,0 +1,36 @@
+#! /usr/bin/env bash
+
+PROMPT=""
+
+usage() { echo "Usage: $0 [-p <prompt>]" 1>&2; exit 1; }
+
+while getopts ":p:" opt; do
+    case "${opt}" in
+        p)
+            PROMPT=${OPTARG}
+            ;;
+        *)
+            usage
+            ;;
+    esac
+done
+
+fifo=$(mktemp -u -t XXXXXXXXX).fifo
+
+mkfifo $fifo
+
+lua="awful = require('awful');
+s = awful.screen.focused();
+
+awful.prompt.run {
+    prompt = '<b>$PROMPT </b>',
+    textbox = s.mypromptbox.widget,
+    exe_callback = function(retval)
+        local fifo = io.open('$fifo', 'w');
+        fifo:write(retval .. '\\n');
+        fifo:close()
+    end }"
+
+awesome-client "$lua"
+cat $fifo
+rm -f $fifo
