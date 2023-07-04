@@ -11,6 +11,7 @@ local function new(params)
             { "Visual Studio Code", "/home/kraken/HDD/Software/VSCode/code --no-sandbox" },
             { "GIMP", "gimp" },
             { "LibreOffice", "/home/kraken/HDD/Software/LibreOffice.AppImage" },
+	    { "Octave", "octave --gui" },
             { "bash", params.terminal .. " bash" }
         } },
         { "Communication", {
@@ -30,14 +31,16 @@ local function new(params)
             { "Network Manager", params.terminal .. " -e nmtui" },
             { "9vx", "/home/kraken/HDD/9front/plan9.sh" },
             { "drawterm", "/home/kraken/.local/bin/drawterm -u glenda -a localhost -h localhost" },
-            { "Explorer", "wine explorer.exe" }
+            { "Explorer", "wine explorer.exe" },
+	    { "Restart AwesomeWM", awesome.restart }
         } },
         { "Gaems", {
-            { "Minecraft", "java -jar '/home/kraken/HDD/No Gaems/TL.jar'" },
+            { "Minecraft", "/opt/jre1.8.0_351/bin/java -jar '/home/kraken/HDD/No Gaems/TL.jar'" },
             { "Steam", "steam" },
             { "Hedgewars", "hedgewars" },
             { "Minetest", "minetest" },
-            { "Factorio", "/home/kraken/HDD/No Gaems/Factorio/start.sh" }
+	    { "OpenSpades", "/home/kraken/HDD/No\\ Gaems/openspades/openspades.sh" },
+            { "Factorio", "/home/kraken/HDD/No\\ Gaems/Factorio/start.sh" }
         } },
         { "Network", {
             { "Firefox", "/home/kraken/HDD/Software/Firefox/firefox" },
