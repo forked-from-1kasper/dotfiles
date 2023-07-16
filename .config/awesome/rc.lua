@@ -43,6 +43,8 @@ end
 beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/rio/theme.lua")
 naughty.config.defaults.position = "top_middle"
 
+naughty.config.defaults.icon_size = 100
+
 -- This is used later as the default terminal and editor to run.
 terminal   = "uxterm"
 editor     = os.getenv("EDITOR") or "editor"
