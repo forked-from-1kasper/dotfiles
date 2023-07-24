@@ -236,6 +236,10 @@
 <Multi_key> <Cyrillic_ie> <Cyrillic_ie> : "є"
 <Multi_key> <Cyrillic_IE> <Cyrillic_IE> : "Є"
 
+<Multi_key> <Cyrillic_shorti> <Cyrillic_u> : "ў"
+<Multi_key> <Cyrillic_shorti> <Cyrillic_U> : "Ў"
+<Multi_key> <Cyrillic_SHORTI> <Cyrillic_U> : "Ў"
+
 <Multi_key> <Cyrillic_ya> <Cyrillic_te> <Cyrillic_softsign> : "ѣ"
 
 <Multi_key> <s> <q> : "√"
@@ -247,3 +251,6 @@
 <Multi_key> <bar> <D> : "𝔻"
 
 <Multi_key> <asciitilde> <asciitilde> : "≈"
+
+<Multi_key> <less> <equal> : "≤"
+<Multi_key> <greater> <equal> : "≥"
