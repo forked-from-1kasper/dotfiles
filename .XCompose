@@ -216,6 +216,17 @@
 <Multi_key> <underscore> <v> : "ᵥ"
 <Multi_key> <underscore> <x> : "ₓ"
 
+<Multi_key> <b> <0> : "𝟎"
+<Multi_key> <b> <1> : "𝟏"
+<Multi_key> <b> <2> : "𝟐"
+<Multi_key> <b> <3> : "𝟑"
+<Multi_key> <b> <4> : "𝟒"
+<Multi_key> <b> <5> : "𝟓"
+<Multi_key> <b> <6> : "𝟔"
+<Multi_key> <b> <7> : "𝟕"
+<Multi_key> <b> <8> : "𝟖"
+<Multi_key> <b> <9> : "𝟗"
+
 <Multi_key> <exclam> <equal> : "≠"
 
 <Multi_key> <a> <a> : "∀"
@@ -254,3 +265,5 @@
 
 <Multi_key> <less> <equal> : "≤"
 <Multi_key> <greater> <equal> : "≥"
+
+include %H/.XCompose.contrib
