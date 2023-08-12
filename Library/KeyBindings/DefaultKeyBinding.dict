@@ -1,0 +1,19 @@
+{
+  "~и" = ("insertText:", "і");
+  "~И" = ("insertText:", "І");
+  "~й" = ("insertText:", "ї");
+  "~Й" = ("insertText:", "Ї");
+  "~е" = ("insertText:", "є");
+  "~Е" = ("insertText:", "Є");
+  "~г" = ("insertText:", "ґ");
+  "~Г" = ("insertText:", "Ґ");
+  "~," = ("insertText:", "’");
+  "~<" = { "~<" = ("insertText:", "«"); };
+  "~>" = { "~>" = ("insertText:", "»"); };
+  "~-" = {
+    "~-" = ("insertText:", " — ");
+    "~." = ("insertText:", "‐");
+    "~ю" = ("insertText:", "‐");
+  };
+  "~." = { "~." = ("insertText:", "…"); };
+}
